@@ -4,7 +4,7 @@ h3. How to use
 
 * Override the *_mediatorMap_* getter method in *_context_* to:
 
-<pre> return _mediatorMap || (_mediatorMap = new LazyMediatorMap(contextView, injector));</pre>
+<pre> return _mediatorMap || (_mediatorMap = new LazyMediatorMap(contextView, injector, reflector));</pre>
 
 * In the constructor of view classes add:
 
